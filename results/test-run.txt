@@ -1,0 +1,17 @@
+test_attention_hand_example (test_lab.LabTests) ... ok
+test_bounded_concurrency (test_lab.LabTests) ... ok
+test_group_normalization (test_lab.LabTests) ... ok
+test_idempotency_retry_and_payload_conflict (test_lab.LabTests) ... ok
+test_kv_memory_formula (test_lab.LabTests) ... ok
+test_lora_merge (test_lab.LabTests) ... ok
+test_online_matches_dense_across_shapes_blocks (test_lab.LabTests) ... ok
+test_retrieval_returns_supporting_document (test_lab.LabTests) ... ok
+test_rrf_ranking (test_lab.LabTests) ... ok
+test_softmax_extreme_logits (test_lab.LabTests) ... ok
+test_speculative_preserves_target_distribution_empirically (test_lab.LabTests) ... ok
+test_storyboard_validation (test_lab.LabTests) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.155s
+
+OK

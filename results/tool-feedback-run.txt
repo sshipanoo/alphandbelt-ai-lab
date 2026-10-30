@@ -1,0 +1,14 @@
+{
+  "scope": "Handwritten tool feedback example, not the AT-AT optimizer",
+  "before": {
+    "used": 12,
+    "limit": 10
+  },
+  "after": {
+    "used": 12,
+    "limit": 10,
+    "remaining": 0,
+    "over_limit": true
+  },
+  "checks": "3 passed"
+}

@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+.DS_Store
+results/storyboard/s*.mp4
+results/storyboard/list.txt
+results/storyboard/commands.json
+results/storyboard/normalized.mp4

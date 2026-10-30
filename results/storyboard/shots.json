@@ -1,0 +1,23 @@
+[
+  {
+    "id": "s01",
+    "duration": 6,
+    "caption": "问题：输入太多，成本太高",
+    "label": "01 / THE PROBLEM",
+    "detail": "每次请求，都把所有资料重新发一遍？"
+  },
+  {
+    "id": "s02",
+    "duration": 6,
+    "caption": "检索：先找到需要的证据",
+    "label": "02 / RETRIEVE",
+    "detail": "从资料中选出相关片段，并保留来源。"
+  },
+  {
+    "id": "s03",
+    "duration": 6,
+    "caption": "回答：只围绕证据展开",
+    "label": "03 / ANSWER",
+    "detail": "把问题和片段交给模型，再核对引用。"
+  }
+]

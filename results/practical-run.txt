@@ -1,0 +1,33 @@
+{
+  "dedup": {
+    "before": 3,
+    "after": 2,
+    "records": [
+      {
+        "text": "device token",
+        "sources": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "text": "audio PCM",
+        "sources": [
+          "c"
+        ]
+      }
+    ]
+  },
+  "parent_lookup": [
+    {
+      "id": 2,
+      "text": "Warranty policy."
+    },
+    {
+      "id": 1,
+      "text": "Within 7 days AND unopened."
+    }
+  ],
+  "validation": "valid accepted; 3 invalid cases rejected",
+  "budget": "estimate .006; over-budget case rejected"
+}

@@ -1,0 +1,162 @@
+{
+  "environment": {
+    "python": "3.9.6",
+    "numpy": "1.26.4",
+    "platform": "Darwin"
+  },
+  "attention": {
+    "q": [
+      [
+        1.0,
+        0.0
+      ]
+    ],
+    "k": [
+      [
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0
+      ]
+    ],
+    "v": [
+      [
+        10.0,
+        0.0
+      ],
+      [
+        0.0,
+        20.0
+      ]
+    ],
+    "weights": [
+      [
+        0.6697615493266569,
+        0.3302384506733431
+      ]
+    ],
+    "output": [
+      [
+        6.697615493266569,
+        6.604769013466862
+      ]
+    ]
+  },
+  "online_attention": {
+    "shape": [
+      17,
+      8
+    ],
+    "block": 3,
+    "max_abs_error": 2.220446049250313e-16,
+    "scope": "CPU forward math only, not a CUDA implementation or speed benchmark"
+  },
+  "lora": {
+    "shape": [
+      4,
+      4
+    ],
+    "rank": 1,
+    "merge_max_abs_error": 4.440892098500626e-16,
+    "large_matrix_params": 16777216,
+    "rank8_params": 65536,
+    "scope": "Matrix update and merge equivalence, not fine-tuning a language model"
+  },
+  "speculative": {
+    "frequency": [
+      0.60002,
+      0.30041,
+      0.09957
+    ],
+    "acceptance": 0.59919,
+    "samples": 100000,
+    "seed": 42,
+    "target": [
+      0.6,
+      0.3,
+      0.1
+    ],
+    "draft": [
+      0.2,
+      0.5,
+      0.3
+    ],
+    "scope": "Single-position probability correction, not an LLM decoding benchmark"
+  },
+  "grpo": {
+    "rewards": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "advantages": [
+      -1.0,
+      -1.0,
+      1.0,
+      1.0
+    ],
+    "scope": "Group normalization only, not complete policy training"
+  },
+  "memory": {
+    "kv_gib": 4.0,
+    "weight_7b_fp16_gb": 14.0,
+    "weight_7b_q4_raw_gb": 3.5
+  },
+  "rrf": [
+    [
+      "B",
+      0.03252247488101534
+    ],
+    [
+      "A",
+      0.032266458495966696
+    ],
+    [
+      "D",
+      0.016129032258064516
+    ],
+    [
+      "C",
+      0.015873015873015872
+    ]
+  ],
+  "retrieval": [
+    {
+      "id": 1,
+      "title": "Device token",
+      "text": "The device token authenticates each device request."
+    }
+  ],
+  "idempotency": {
+    "first_id": 1,
+    "retry_id": 1,
+    "rows": 1
+  },
+  "concurrency": {
+    "jobs": 9,
+    "limit": 3,
+    "peak": 3,
+    "values": [
+      0,
+      1,
+      4,
+      9,
+      16,
+      25,
+      36,
+      49,
+      64
+    ]
+  },
+  "cost_example": {
+    "requests": 1000,
+    "input_tokens_each": 4000,
+    "output_tokens_each": 500,
+    "hypothetical_input_per_million": 1,
+    "hypothetical_output_per_million": 4,
+    "total": 6.0
+  }
+}

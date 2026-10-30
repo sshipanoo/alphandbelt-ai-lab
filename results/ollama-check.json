@@ -1,0 +1,92 @@
+{
+  "scope": "Local smoke checks, not an evaluation benchmark",
+  "version": {
+    "version": "0.24.0"
+  },
+  "model": "qwen3:0.6b",
+  "models": [
+    {
+      "name": "qwen3:0.6b",
+      "digest": "7df6b6e09427a769808717c0a93cadc4ae99ed4eb8bf5ca557c90846becea435"
+    }
+  ],
+  "basic": {
+    "request_prompt": "用一句话解释HTTP。",
+    "response": "HTTP是一种用于在网络上传输数据的协议，它使客户端和服务器能够通过请求和响应来交换信息。",
+    "done": true
+  },
+  "structured": {
+    "schema": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "priority": {
+          "type": "string",
+          "enum": [
+            "low",
+            "normal",
+            "high"
+          ]
+        }
+      },
+      "required": [
+        "title",
+        "priority"
+      ],
+      "additionalProperties": false
+    },
+    "response": {
+      "title": "尽快整理发票",
+      "priority": "high"
+    },
+    "shape_check": "passed"
+  },
+  "tool_call": {
+    "passed": true,
+    "executed": [
+      {
+        "name": "add",
+        "arguments": {
+          "a": 17,
+          "b": 25
+        },
+        "result": 42
+      }
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "必须调用add工具计算17+25，然后告诉我结果。"
+      },
+      {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "id": "call_boqju9tq",
+            "function": {
+              "index": 0,
+              "name": "add",
+              "arguments": {
+                "a": 17,
+                "b": 25
+              }
+            }
+          }
+        ]
+      },
+      {
+        "role": "tool",
+        "tool_name": "add",
+        "content": "{\"result\": 42}"
+      },
+      {
+        "role": "assistant",
+        "content": "17加25等于42。"
+      }
+    ],
+    "final": "17加25等于42。"
+  }
+}
