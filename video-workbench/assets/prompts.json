@@ -1,0 +1,20 @@
+[
+  {
+    "shot": 1,
+    "prompt": "Use case: stylized-concept. Create a single extraordinary cinematic science fiction concept-art frame for an original 24-second film called The Cloud Archive. This is SHOT 01, exterior establishing view, landscape 16:9, very high visual quality. A monumental circular ivory archive suspended inside a vast dark basalt mountain canyon, three thin concentric architectural rings surrounding an amber luminous central void, fine hanging walkways, mist drifting in the canyon, tiny warm windows suggesting human scale. Architecture is credible, intricate and elegant, with aged ceramic, brushed titanium and dark stone; amber light reflected through fog. Strong diagonal perspective from a distant aerial vantage, sense of impossible scale, editorial architectural photography crossed with premium science fiction matte painting, subtle film grain, realistic atmospheric depth, restrained ivory/charcoal/amber palette. Leave lower 15 percent quieter/darker for subtitles. This is an original imagined location, not an existing building. No characters, no writing, no letters, no logos, no watermarks, no split panels, no neon blue, no generic circuit board graphics. Render a finished cinematic image, not a poster layout.",
+    "mode": "built-in imagegen",
+    "asset": "01-arrival.png"
+  },
+  {
+    "shot": 2,
+    "prompt": "Use case: stylized-concept. Asset type: cinematic frame SHOT 02 for original concept film The Cloud Archive. Input image is a reference for the imagined circular ivory archive and its charcoal/amber visual language, not an edit target. Generate a NEW shot INSIDE that same building. Landscape 16:9. Monumental cylindrical atrium, concentric ivory balconies with incredibly fine black metal rails, countless dark archival books rising in elegant curved shelves, a central vertical spindle of illuminated translucent amber memory wafers suspended like a spiral staircase, a narrow pedestrian bridge crosses the void in the midground, no people. Low camera on a balcony looking upward and across toward slanted golden volumetric light through the open ring above; dramatic controlled exposure with pockets of darkness, sophisticated geometry, credible architectural material detail, premium science-fiction cinematic photography, subtle grain. Center of interest in upper two thirds; bottom 15 percent relatively dark for subtitles. Keep warm ivory, charcoal and amber palette consistent with the reference. NOT a magical fantasy castle. No writing, no lettering, no logos, no watermark, no collage, no split panels, no generic blue holograms.",
+    "mode": "built-in imagegen",
+    "asset": "02-memory.png"
+  },
+  {
+    "shot": 3,
+    "prompt": "Use case: stylized-concept. Asset type: SHOT 03 ending frame of an original cinematic concept film The Cloud Archive. The input image is a visual reference for architecture, palette and imagined location only. Generate a DIFFERENT viewpoint inside the SAME huge circular canyon archive: intimate close-to-medium view from a quiet reading alcove on an upper ivory balcony. A beautifully detailed open archival book with blank textured pages rests on a dark stone table in the immediate foreground at right, a small sculptural amber reading light beside it. Through a very large circular window at left and center we see the deep misty basalt canyon and opposite curving ivory archive balconies bathed in sunrise. A strip of golden sunlight grazes the paper and dust in the air. Hero composition with near-far depth and restrained asymmetry, sophisticated cinematic architectural photograph, tactile book paper and weathered ivory stone, extremely detailed and quietly emotionally resonant. Landscape 16:9. Bottom 15 percent dark and quiet enough for subtitle overlay. Consistent charcoal, ivory and amber; no blue. No visible people, no writing on the book, no text anywhere, no logo or watermark, no collage, no split panels. Not a poster, a finished movie still.",
+    "mode": "built-in imagegen",
+    "asset": "03-future.png"
+  }
+]

@@ -1,0 +1,4 @@
+.cache/
+__pycache__/
+experiments-run.log
+results/0*.mp4

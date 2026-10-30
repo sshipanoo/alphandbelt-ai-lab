@@ -1,0 +1,12 @@
+{
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "voice": "Tingting",
+  "rate": 170,
+  "shots": [
+    {"id": "arrival", "image": "assets/01-arrival.png", "seconds": 8, "motion": "in", "narration": "如果知识也有一座城，我想把它建在云里。"},
+    {"id": "memory", "image": "assets/02-memory.png", "seconds": 8, "motion": "right", "narration": "让光穿过纸页，也让记忆拥有形状。"},
+    {"id": "future", "image": "assets/03-future.png", "seconds": 8, "motion": "out", "narration": "这是一座想象中的档案馆，留给未来的我们。"}
+  ]
+}
