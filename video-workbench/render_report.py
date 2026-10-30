@@ -23,7 +23,7 @@ def main():
 <section class="hero"><video controls preload="metadata" poster="assets/01-arrival.png" src="results/cloud-archive.mp4"></video><div class="intro"><h2>一份分镜，三条支路。</h2><p>画面、声音与字幕分别构建，输入变了才重做对应节点，再重新合成最终 MP4。</p><p>本片为 AI 静帧 + 二维程序运镜；声音使用 macOS TTS，低音氛围声由代码合成。</p><div class="spec">24 SEC · 1920 × 1080 · 30 FPS<br>H.264 / yuv420p · AAC / 48 kHz</div></div></section>
 <section class="panel" id="evidence"><h2>实际改稿记录</h2><table><thead><tr><th>本轮操作</th><th>12 个节点：B 重做 / · 复用</th><th>BUILD</th><th>HIT</th><th>执行耗时</th></tr></thead><tbody>'''+''.join(rows)+'''</tbody></table><p class="note">单机单轮：计时从执行节点到复制成片，含节点哈希检查与音视频处理；不含清单预检、工具探测、AI 出图、开发及安装。最终合成仍需重编码。</p></section>
 <section class="panel"><h2>依赖决定重建范围</h2><div class="flow"><div class="lane"><h3>画面支路</h3><p>原图 + 运镜 + 时长 + 规格<br>单镜头 → 拼接画面</p></div><div class="lane"><h3>声音支路</h3><p>文字 + 声音 + 语速 + 时长<br>实测时长 → 补齐每个镜头</p></div><div class="lane"><h3>字幕支路</h3><p>文字 + 字体 + 尺寸<br>透明图层 → 最后叠加</p></div></div></section>
-<section class="panel"><h2>异常拦截与成片校验</h2><div class="checks">'''+errors+'''</div><p class="note">最终成片已检查音视频流、格式、分辨率、帧率与时长，并执行完整解码。人工观感仍需单独审看。</p></section><p class="foot">代码、分镜、提示词、原始运行记录：<a href="https://github.com/sshipanoo/alphandbelt-ai-lab/tree/main/video-workbench">GitHub / video-workbench</a> · 本例当前使用 macOS 语音与字体适配。</p></main></html>'''
+<section class="panel"><h2>异常拦截与成片校验</h2><div class="checks">'''+errors+'''</div><p class="note">最终成片已检查音视频流、格式、分辨率、帧率与时长，并执行完整解码。人工观感仍需单独审看。</p></section><p class="foot">代码、分镜、提示词、原始运行记录：<a href="https://github.com/sshipanoo/alphandbelt-ai-lab/tree/video-workbench-code/video-workbench">GitHub / video-workbench</a> · 本例当前使用 macOS 语音与字体适配。</p></main></html>'''
     (ROOT/'report.html').write_text(document, encoding='utf-8')
 
 
